@@ -6,7 +6,7 @@ import rx, { Subject } from 'rxjs'
 function App() {
   const subject = new Subject()
   subject.subscribe(
-    (item) => console.log('next', item),
+    item => console.log('next', item),
     (err: Error) => console.error(err),
     () => console.log('a complete')
   )
