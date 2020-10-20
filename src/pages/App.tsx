@@ -1,18 +1,8 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import rx, { Subject } from 'rxjs'
 
 function App() {
-  const subject = new Subject()
-  subject.subscribe(
-    item => console.log('next', item),
-    (err: Error) => console.error(err),
-    () => console.log('a complete')
-  )
-  subject.next('item')
-  subject.complete()
-
   return (
     <div className="App">
       <header className="App-header">
