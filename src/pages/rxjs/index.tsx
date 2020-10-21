@@ -9,6 +9,7 @@ const index: React.FC = () => {
     () => console.log('a complete')
   )
   subject.next('item')
+  subject.next('item2')
   subject.complete()
   return (
     <div>
