@@ -5,7 +5,7 @@ const index: React.FC = () => {
   const subject = new Subject()
   subject.subscribe(
     item => console.log('next', item),
-    (err: Error) => console.error(err),
+    (err: Error) => console.error('err', err),
     () => console.log('a complete')
   )
   subject.next('item')
